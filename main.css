@@ -1,0 +1,398 @@
+/* Main styles*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+.logo {
+    text-align: center;
+    padding: 25px;
+}
+
+form {
+    margin: 0;
+}
+
+#formBox {
+    background-color: white;
+    width: 40%;
+    height: 360px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 100px auto;
+    box-shadow: 0px 1px 2px lightgrey;;
+}
+
+#formTitle {
+    font-family: 'Raleway', sans-serif; 
+    color: #0B5B99;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0 40px 0;
+    box-shadow: 0px 1px 2px lightgrey;
+}
+
+#fields {
+    text-align: center;
+    margin: 40px 40px 0 0;
+}
+
+.inputFont_s,
+.inputFont_d {
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    font-size: 18px;
+    float: left;
+    width: 30%;
+    margin-left: 25px;
+}
+
+.inputFont_s {
+    padding: 5px 0 5px 0;
+}
+
+.inputFont_d {
+    padding: 5px 0 5px 50px;
+}
+
+.ssn {
+    padding: 5px 5px 5px 40px;
+}
+
+.dob {
+    padding: 10px 5px 5px 40px;
+}
+
+::placeholder {
+    color: lightgrey;
+    opacity: 1;
+    font-family: sans-serif;
+}
+
+input[type=text],
+input[type=date] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 53%;
+    font-size: 16px;
+    padding: 5px 10px;
+    height: 35px;
+    font-family: sans-serif;
+    float: left;
+}
+
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: lightgrey;
+    font-family: sans-serif;
+}
+
+#button {
+    margin:40px 5px 40px 5px;
+}
+
+.button {
+    float: right;
+    padding: 8px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #A1C55A;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px rgb(94, 94, 94);
+  }
+  
+.button:hover {
+    background-color: #90c22e;
+}
+  
+.button:active {
+    background-color: #A1c55a;
+    box-shadow: 0 3px rgb(32, 32, 32);
+    transform: translateY(4px);
+  }
+
+.button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: white;
+  opacity: 25%;
+}
+
+
+
+
+
+
+
+/* ---- Media Queries ---- */
+
+@media screen and (max-width: 350px) {
+    
+
+    .header {
+        width: auto;
+    }
+
+    #formBox {
+        width: 90%;
+        height: 400px;
+    }
+
+    #fields {
+        margin: 20px 0 40px 0;
+    }
+
+    #formTitle {
+        font-size: 18px;
+    }
+
+    .inputFont_s, 
+    .inputFont_d {
+        width: 90%;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    input[type=text],
+    input[type=date] {
+    width: 90%;
+    font-size: 16px;
+    padding: 5px 10px;
+    height: 35px;    
+    }
+
+    #button {
+       margin: 50px 0;
+    }
+    
+    .button {
+        width: 90%;
+        margin: 40px 0;
+        float: none;
+    }
+    
+ 
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .header {
+        width: auto;
+    }
+
+    #formBox {
+        width: 90%;
+        height: 400px;
+    }
+
+    #fields {
+        margin: 20px 0 40px 0;
+    }
+
+    #formTitle {
+        font-size: 18px;
+    }
+
+    .inputFont_s, 
+    .inputFont_d {
+        width: 90%;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    input[type=text],
+    input[type=date] {
+    width: 90%;
+    font-size: 16px;
+    padding: 5px 10px;
+    height: 35px;    
+    }
+
+    #button {
+       margin: 50px 0;
+    }
+    
+    .button {
+        width: 90%;
+        margin: 40px 0;
+        float: none;
+    }
+    
+
+  }
+
+  @media screen and (max-width: 550px) {
+
+    .header {
+        width: auto;
+    }
+
+    #formBox {
+        width: 90%;
+        height: 400px;
+    }
+
+    #fields {
+        margin: 20px 0 40px 0;
+    }
+
+    #formTitle {
+        font-size: 18px;
+    }
+
+    .inputFont_s, 
+    .inputFont_d {
+        width: 90%;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    input[type=text],
+    input[type=date] {
+    width: 90%;
+    font-size: 16px;
+    padding: 5px 10px;
+    height: 35px;    
+    }
+
+    #button {
+       margin: 50px 0;
+    }
+    
+    .button {
+        width: 90%;
+        margin: 40px 0;
+        float: none;
+    }
+
+
+  }
+
+  @media screen and (max-width: 660px) {
+
+    .header {
+        width: auto;
+    }
+
+    #formBox {
+        width: 90%;
+        height: 400px;
+    }
+
+    #fields {
+        margin: 20px 0 40px 0;
+    }
+
+    #formTitle {
+        font-size: 18px;
+    }
+
+    .inputFont_s, 
+    .inputFont_d {
+        width: 90%;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .ssn {
+        padding: 5px 5px 5px 40px;
+    }
+    
+    .dob {
+        padding: 10px 5px 5px 40px;
+    }
+
+    input[type=text],
+    input[type=date] {
+    width: 90%;
+    font-size: 16px;
+    padding: 5px 10px;
+    height: 35px;    
+    }
+
+    #button {
+       margin: 50px 0;
+    }
+    
+    .button {
+        width: 90%;
+        margin: 40px 0;
+        float: none;
+    }
+    
+
+  }
+
+  @media screen and (max-width: 1600px) {
+
+    .header {
+        width: auto;
+    }
+
+    #formBox {
+        width: 40%;
+        height: 400px;
+    }
+
+    #fields {
+        margin: 20px 0 40px 0;
+    }
+
+    #formTitle {
+        font-size: 18px;
+    }
+
+    .inputFont_s, 
+    .inputFont_d {
+        width: 90%;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .ssn {
+        padding: 5px 5px 5px 40px;
+    }
+    
+    .dob {
+        padding: 10px 5px 5px 40px;
+    }
+
+    input[type=text],
+    input[type=date] {
+    width: 90%;
+    font-size: 16px;
+    padding: 5px 10px;
+    height: 35px;    
+    }
+
+    #button {
+       margin: 50px 0;
+    }
+    
+    .button {
+        width: 90%;
+        margin: 40px 0;
+        float: none;
+    }
+
+
+  }
+
+ 
